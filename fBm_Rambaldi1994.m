@@ -1,7 +1,7 @@
 function [fBm] = fBm_Rambaldi1994(H,L,delta)
     tic();
     l = 1; %metà lunghezza di un blocco
-    M = floor(L/2); %numero di blocchi elementari, un blocco elemanter è lungo 2*l
+    M = floor(L/2); %numero di blocchi elementari, un blocco elementare è lungo 2*l
     
     K = 8; %numero di momenti ai quali tronco la serie di Taylor
     moment = linspace(0,K,K+1); %conto anche il momento nullo
